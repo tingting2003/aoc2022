@@ -9,10 +9,10 @@ print(user_input)
 
 for i in range(len(user_input)):
     # win
-    if user_input[i] == 'A Y' or user_input[i] == 'B Z' or user_input[i] == 'C X':
+    if user_input[i] in ['A Y','B Z', 'C X']:
         singleScore = 6
     # draw
-    elif user_input[i] == 'A X' or user_input[i] == 'B Y' or user_input[i] == 'C Z':
+    elif user_input[i] in ['A X','B Y','C Z']:
         singleScore = 3
     else:
         singleScore = 0
